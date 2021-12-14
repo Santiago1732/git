@@ -1,0 +1,179 @@
+Cloud..
+
+toods somos usuarios dela nube.
+googel docs, one drive.
+o iclod.
+todo el mndo esta en la mundo.
+
+la gente piensa que es reducir costos pero es mas.
+twitter,uber,didi,fb,ig,snapshat, funcionan a todo maquina por 
+62% ejcutivos dicen que la nube revoluciona sus empresas.
+
+frase celebre.
+"no hay nube, es solo la computaodra d eotra persona"
+
+esto pierde completamente la atencion.
+no es la deficinicion objetiva.
+
+a que nos referimos con la nube??
+
+
+la nube no s epuede explicar con dos ejemplos.
+cuando deseas saber mas sobre una tecnologia, tenes que aprender
+muchas cosas, n oslolo dos ejemplos..
+
+cual es el principal beneficio de la nube?
+1) podes guardar cosas en la nube, usar musica.
+2) lanzar rapido aplicaciones, no perdemos itempo.
+3) plataforma de datos par aprender,
+4) reduce gatos de contratacion
+
+todas describen esto y no tienen relacion.
+caracteristas.
+Mejora:
+costos,convennencie, speed, features
+
+requerimientos:
+tener internet, no signfiica estar conectado 100% a internet todo el tiempo
+para usar la cloud.
+
+categorias cloud:
+1) Software as a Service (SaaS)
+2) Infrastrucutre as a Service (IaaS)
+3) Platform as a Service (Paas)
+
+Software as Service (SaaS)
+suele ser mas sencillo de entende porque la mayoria de los
+usuarios o servicios ya utilizan Saas 
+la utilizan la mayoria de los empresarios.
+si usas un proveedor como gmail, outlook,. si
+usa una herramienta web, box o slack
+google drive, drive, son todos software como servicios.
+es una pieza de software.
+en lugar de un aplicacion que se descarga, estas apps se ejectuan
+en servidores, donde nosotros nos conectamos l amaoria
+de las veces por internet.
+necesitas estar conectado a internet.
+cuando te registras en cualquiera 
+vos no sos propietario de el soft, a veces
+si ni pagas, no pode susarlo.
+a veces son financiadas con publicidad o podes usarla
+hasta cierto uso.
+
+software como servicio: a veces te pediran que 
+descargues un app liviane que se ejecutara
+en la pc o telefonoy esa aplicacion se esta conectado
+al software nube, y descargara el contendiod.
+
+SaaS es una pp terminada que se ejecuta en la nuba
+
+Infrastructure as a Service (IaaS)
+tambien podemos estar interesados en tener un 
+acceso mas profundo, a los recuros s de un centro de datos
+de computacion en la nube.
+donde podriamos	trabajar con servidores,
+alamcenamiento y redes.
+normalmente porque luego queremos construir algo
+con ellos
+y cuando el proveedor de servicios en la nube nos ofrece
+esa opcion, la llamamos infraestrctura como servicio
+las empresaas que podemos usar este ejemplo
+puede ser AWS (amazon web service).
+google clod platform, microsoft azure, alibaba cloud,
+todas ellas brindan infraestrucutura como servicio.
+puedo iniciar sesion, crear cuenta,
+agregar metodo de pago.
+ si quisiera un servidor, podria elegir cuando RAM
+tiene ese servidor, que tan rapido es la CPU, tamaño
+de disco duro
+ademas podria elegir donde ubicarla, en qeu region etc
+Cuando hago con cuaqlueira d eesots proveedores,
+no ovtendre acceso dedicado a una maquina fisica real
+que se encuentre en ese centro de datos.
+en su lugar, usare una maquina virtual
+puedo tener el sistema operativo que quiera.
+una vdi es un programa que ejecuta en
+una computadora fisica fisica real 
+pero que emula a otra maquina real
+y una de las mejores cosas de las maquinas virtuales
+es que se puedne guardar
+al igual que se guarda un odcumento
+podemos hacer lift and shift, ahi es donde tomaria
+sistemas que actualmente tiene ejectuandose en su propio hardware
+sin redisiñear nada.
+simplemente trasladar todo la
+
+clod services
+
+split librerias
+trazabailidad
+crear api para ya configurar el arquemis para que le pegue.
+
+
+crear pop, tener la config de la cola de la api ,como para probar si funciona en open
+aramr libreria que se encargue de configurar toda la parte de artemis.
+con mi libreria deberia ser practicamente automatico la cola.
+el me puede pasar lo que hizo facu.
+
+3 niveles recibo
+0170116240000008863698
+
+<?xml version="1.0" encoding="UTF-8"?> <!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License. --> <configuration xmlns="urn:activemq" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd"><core xmlns="urn:activemq:core" xsi:schemaLocation="urn:activemq:core ">
+<name>amq-broker</name>
+<persistence-enabled>true</persistence-enabled>
+<!-- this could be ASYNCIO, MAPPED, NIO            ASYNCIO: Linux Libaio            MAPPED: mmap files            NIO: Plain Java Files        -->
+<journal-type>NIO</journal-type>
+<paging-directory>/opt/amq-artemis-cluster/data/paging</paging-directory>
+<bindings-directory>/opt/amq-artemis-cluster/data/bindings</bindings-directory>
+<journal-directory>/opt/amq-artemis-cluster/data/journal</journal-directory>
+<large-messages-directory>/opt/amq-artemis-cluster/data/large-messages</large-messages-directory>
+<journal-datasync>true</journal-datasync>
+<journal-min-files>2</journal-min-files><journal-pool-files>10</journal-pool-files>
+<journal-device-block-size>4096</journal-device-block-size>
+<journal-file-size>10M</journal-file-size>
+<message-counter-enabled>true</message-counter-enabled>
+<thread-pool-max-size>1000</thread-pool-max-size>
+<!--         You can verify the network health of a particular NIC by specifying the 
+<network-check-NIC> element.          <network-check-NIC>theNicName</network-check-NIC>         -->
+<!--         Use this to use an HTTP server to validate the network          
+<network-check-URL-list>http://www.apache.org</network-check-URL-list> -->
+<!-- <network-check-period>10000</network-check-period> -->
+<!-- <neortwork-check-timeout>1000</network-check-timeout> -->
+<!-- this is a comma separated list, no spaces, just DNS or IPs            it should accept IPV6             Warning: Make sure you understand your network topology as this is meant to validate if your network is valid.                     Using IPs that could eventually disappear or be partially visible may defeat the purpose.                     You can use a list of multiple IPs, and if any successful ping will make the server OK to continue running --><!-- <network-check-list>10.0.0.1</network-check-list> --><!-- use this to customize the ping used for ipv4 addresses --><!-- <network-check-ping-command>ping -c 1 -t %d %s</network-check-ping-command> --><!-- use this to customize the ping used for ipv6 addresses --><!-- <network-check-ping6-command>ping6 -c 1 %2$s</network-check-ping6-command> --><connectors><!-- Connector used to be announced through cluster connections and notifications --><connector name="artemis">tcp://0.0.0.0:61616</connector><connector name="connector0">tcp://localhost:22222</connector></connectors>
+<!-- how often we are looking for how many bytes are being used on the disk in ms --><disk-scan-period>5000</disk-scan-period><!-- once the disk hits this limit the system will block, or close the connection in certain protocols            that won't support flow control. --><max-disk-usage>90</max-disk-usage><!-- should the broker detect dead locks and other issues --><critical-analyzer>true</critical-analyzer><critical-analyzer-timeout>120000</critical-analyzer-timeout><critical-analyzer-check-period>60000</critical-analyzer-check-period><critical-analyzer-policy>HALT</critical-analyzer-policy><!-- the system will enter into page mode once you hit this limit.            This is an estimate in bytes of how much the messages are using in memory              The system will use half of the available memory (-Xmx) by default for the global-max-size.             You may specify a different value here if you need to customize it to your needs.              <global-max-size>100Mb</global-max-size>        -->
+
+<acceptors>
+
+<!-- useEpoll means: it will use Netty epoll if you are on a system (Linux) that supports it --><!-- amqpCredits: The number of credits sent to AMQP producers --><!-- amqpLowCredits: The server will send the # credits specified at amqpCredits at this low mark --><!-- amqpDuplicateDetection: If you are not using duplicate detection, set this to false                                       as duplicate detection requires applicationProperties to be parsed on the server. --><!-- Note: If an acceptor needs to be compatible with HornetQ and/or Artemis 1.x clients add                     "anycastPrefix=jms.queue.;multicastPrefix=jms.topic." to the acceptor url.                     See https://issues.apache.org/jira/browse/ARTEMIS-1644 for more information. --><!-- Acceptor for every supported protocol -->
+
+<acceptor name="amqp">tcp://0.0.0.0:5672?protocols=AMQP;anycastPrefix=jms.topic.;multicastPrefix=/queue/;tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576;useEpoll=true;amqpCredits=1000;amqpMinCredits=300</acceptor>
+<acceptor name="scaleDown">tcp://0.0.0.0:61616?protocols=CORE,OPENWIRE,CORE;tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576;useEpoll=true;amqpCredits=1000;amqpMinCredits=300</acceptor>
+
+</acceptors>
+
+
+
+<cluster-user>A6xYkx2r</cluster-user>
+
+<cluster-password>uAOCczEh</cluster-password>
+
+<broadcast-groups>
+<broadcast-group name="my-broadcast-group">
+<jgroups-file>jgroups-ping.xml</jgroups-file>
+<jgroups-channel>activemq_broadcast_channel</jgroups-channel>
+<connector-ref>artemis</connector-ref>
+</broadcast-group></broadcast-groups>
+<discovery-groups>
+<discovery-group name="my-discovery-group">
+<jgroups-file>jgroups-ping.xml</jgroups-file>
+<jgroups-channel>activemq_broadcast_channel</jgroups-channel>
+<refresh-timeout>10000</refresh-timeout>
+</discovery-group></discovery-groups>
+<cluster-connections>
+<cluster-connection name="my-cluster">
+<connector-ref>artemis</connector-ref>
+<retry-interval>1000</retry-interval>
+<retry-interval-multiplier>2</retry-interval-multiplier>
+<max-retry-interval>32000</max-retry-interval>
+<initial-connect-attempts>20</initial-connect-attempts><
+reconnect-attempts>10</reconnect-attempts><use-duplicate-detection>true</use-duplicate-detection><message-load-balancing>ON_DEMAND</message-load-balancing><max-hops>1</max-hops><discovery-group-ref discovery-group-name="my-discovery-group"/></cluster-connection></cluster-connections><security-settings><security-setting match="#"><permission type="createNonDurableQueue" roles="admin"/><permission type="deleteNonDurableQueue" roles="admin"/><permission type="createDurableQueue" roles="admin"/><permission type="deleteDurableQueue" roles="admin"/><permission type="createAddress" roles="admin"/><permission type="deleteAddress" roles="admin"/><permission type="consume" roles="admin"/><permission type="browse" roles="admin"/><permission type="send" roles="admin"/><!-- we need this otherwise ./artemis data imp wouldn't work --><permission type="manage" roles="admin"/></security-setting></security-settings><address-settings><!-- if you define auto-create on certain queues, management has to be auto-create --><address-setting match="activemq.management#"><dead-letter-address>DLQ</dead-letter-address><expiry-address>ExpiryQueue</expiry-address><redelivery-delay>0</redelivery-delay><!-- with -1 only the global-max-size is in use for limiting --><max-size-bytes>-1</max-size-bytes><message-counter-history-day-limit>10</message-counter-history-day-limit><address-full-policy>PAGE</address-full-policy><auto-create-queues>true</auto-create-queues><auto-create-addresses>true</auto-create-addresses><auto-create-jms-queues>true</auto-create-jms-queues><auto-create-jms-topics>true</auto-create-jms-topics></address-setting><!--default for catch all--><address-setting match="#"><redistribution-delay>0</redistribution-delay><dead-letter-address>DLQ</dead-letter-address><expiry-address>ExpiryQueue</expiry-address><redelivery-delay>0</redelivery-delay><!-- with -1 only the global-max-size is in use for limiting --><max-size-bytes>-1</max-size-bytes><message-counter-history-day-limit>10</message-counter-history-day-limit><address-full-policy>PAGE</address-full-policy><auto-create-queues>true</auto-create-queues><auto-create-addresses>true</auto-create-addresses><auto-create-jms-queues>true</auto-create-jms-queues><auto-create-jms-topics>true</auto-create-jms-topics></address-setting></address-settings><addresses><address name="DLQ"><anycast><queue name="DLQ"/></anycast></address><address name="ExpiryQueue"><anycast><queue name="ExpiryQueue"/></anycast></address></addresses><!-- Uncomment the following if you want to use the Standard LoggingActiveMQServerPlugin pluging to log in events       <broker-plugins>          <broker-plugin class-name="org.apache.activemq.artemis.core.server.plugin.impl.LoggingActiveMQServerPlugin">             <property key="LOG_ALL_EVENTS" value="true"/>             <property key="LOG_CONNECTION_EVENTS" value="true"/>             <property key="LOG_SESSION_EVENTS" value="true"/>             <property key="LOG_CONSUMER_EVENTS" value="true"/>             <property key="LOG_DELIVERING_EVENTS" value="true"/>             <property key="LOG_SENDING_EVENTS" value="true"/>             <property key="LOG_INTERNAL_EVENTS" value="true"/>          </broker-plugin>       </broker-plugins>       --><metrics-plugin class-name="org.apache.activemq.artemis.core.server.metrics.plugins.ArtemisPrometheusMetricsPlugin"/></core></configuration> 
